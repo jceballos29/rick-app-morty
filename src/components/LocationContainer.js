@@ -13,7 +13,6 @@ function LocationContainer({location}) {
                 <>
                     <Imagen />
                     <LocationInfo location={location}/>
-                    {/* TODO: ResidentContainer - ResidentInfo */}
                 </>
             )
         }

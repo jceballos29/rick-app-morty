@@ -5,15 +5,17 @@ import './App.css';
 
 import SearchBox from './components/SearchBox';
 import LocationContainer from './components/LocationContainer';
+import ResidentContainer from './components/ResidentContainer';
 
 import {randomNumber} from './services/randomLocation';
-import {getDataApi} from './services/getDataApi' 
+import {getDataApi} from './services/getDataApi';
 
 function App() {
 
   const [number, setNumber] = useState(null)
   const [url, setUrl] = useState(null)
   const [location, setLocation] = useState(null)
+  const [residents, setResidents] = useState(null)
   const [nameLocation, setNameLocation] = useState(null)
   
   
@@ -46,15 +48,21 @@ function App() {
     if(url) {
       const locationApi = async () => {
         setLocation(await getDataApi(url))
+        
       }
       locationApi()
     }
   }, [url])
 
+  useEffect(() => {
+    if (location) setResidents(location.residents)
+  }, [location])
+  
   return (
     <div className="App">
       <SearchBox getLocation={getLocation}/>
       <LocationContainer location={location}/>
+      <ResidentContainer residents={residents}/>
     </div>
   );
 }
