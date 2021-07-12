@@ -1,0 +1,44 @@
+.SearchBox {
+    grid-area: SearchBox;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 120px;
+    margin-top: 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.SearchBox input {
+    width: 80%;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.SearchBox button {
+    width: 10%;
+    height: 44px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2F4368;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.SearchBox button img {
+    width: 50%;
+}
