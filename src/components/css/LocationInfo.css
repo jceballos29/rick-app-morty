@@ -1,31 +1,31 @@
 .LocationInfo {
-    grid-area: LocationInfo; 
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: flex-start;
+  grid-area: LocationInfo;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
 }
 
 .LocationInfo h3 {
-    font-size: 34px;
+  font-size: 34px;
 }
 .information {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .information p {
-    line-height: 1px;
-    font-style: italic;
+  line-height: 1px;
+  font-style: italic;
 }
 
 .information span {
-    font-weight: bolder;
-    font-style: normal;
-    text-transform: uppercase;
+  font-weight: bolder;
+  font-style: normal;
+  text-transform: uppercase;
 }

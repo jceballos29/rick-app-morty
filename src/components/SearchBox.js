@@ -1,29 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import './css/SearchBox.css'
+import "./css/SearchBox.css";
 
+function SearchBox({ getLocation }) {
+  const [location, setLocation] = useState("");
 
-function SearchBox({getLocation}) {
+  const handleLocation = (event) => {
+    setLocation(event.target.value);
+  };
 
-    const [location, setLocation] = useState('')
-
-    const handleLocation = (event) => {
-        setLocation(event.target.value)
-    }
-
-    return (
-        <div className="SearchBox">
-            <input 
-                type="text" 
-                value={location} 
-                onChange={handleLocation}
-                placeholder="Insert location name" />
-            <button onClick={()=>{
-                getLocation(location)
-                setLocation('')
-            }}>GO!</button>
-        </div>
-    )
+  return (
+    <div className="SearchBox">
+      <input
+        type="text"
+        value={location}
+        onChange={handleLocation}
+        placeholder="Insert Location Name"
+      />
+      <button
+        onClick={() => {
+          getLocation(location);
+          setLocation("");
+        }}
+      >
+        GO!
+      </button>
+    </div>
+  );
 }
 
-export default SearchBox
+export default SearchBox;

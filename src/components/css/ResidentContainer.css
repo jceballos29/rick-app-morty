@@ -1,13 +1,13 @@
 .ResidentContainer {
-    grid-area: ResidentContainer;
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-    margin-right: auto;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 5px 5px; 
-    margin-bottom: 10px;
+  grid-area: ResidentContainer;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  margin-bottom: 10px;
 }

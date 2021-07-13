@@ -1,31 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import './css/LocationContainer.css'
+import "./css/LocationContainer.css";
 
-import Imagen from './location/Imagen'
-import LocationInfo from './location/LocationInfo'
+import Imagen from "./location/Imagen";
+import LocationInfo from "./location/LocationInfo";
 
-function LocationContainer({location}) {
-
-    const renderLocation = () => {
-        if(location){
-            return (
-                <>
-                    <Imagen />
-                    <LocationInfo location={location}/>
-                </>
-            )
-        }
+function LocationContainer({ location }) {
+  const renderLocation = () => {
+    if (location) {
+      return (
+        <>
+          <Imagen />
+          <LocationInfo location={location} />
+        </>
+      );
     }
+  };
 
-
-    return (
-        <div className="LocationContainer">
-            {
-                renderLocation()
-            }
-        </div>
-    )
+  return <div className="LocationContainer">{renderLocation()}</div>;
 }
 
-export default LocationContainer
+export default LocationContainer;

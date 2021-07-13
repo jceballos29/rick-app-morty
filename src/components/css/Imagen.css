@@ -1,12 +1,11 @@
 .Imagen {
-    grid-area: Image;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
+  grid-area: Image;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .Imagen img {
-    width: 70%;
+  width: 70%;
 }
