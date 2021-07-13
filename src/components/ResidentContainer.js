@@ -13,10 +13,23 @@ function ResidentContainer({residents}) {
 
     useEffect(() => {
         if (residents) {
-            setListResidents(residents.map((resident,index) => {
-               return <ResidentInfo key={index} url={resident}/>
-            }))
+            console.log(residents.length)
+            if(residents.length <= 10){
+                setListResidents(residents.map((resident,index) => {
+                return <ResidentInfo key={index} url={resident}/>
+                }))
+            } else {
+                const reduceList = []
+                for (let i = 0; i < 10; i++) {
+                    reduceList.push(residents[i])
+                }
+                console.log(reduceList)
+                setListResidents(reduceList.map((resident,index) => {
+                    return <ResidentInfo key={index} url={resident}/>
+                    }))
+            }           
         }
+        
     }, [residents])
 
     return (

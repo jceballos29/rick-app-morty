@@ -3,13 +3,27 @@
   height: 100vh;
   text-align: center;
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "SearchBox SearchBox SearchBox SearchBox SearchBox SearchBox SearchBox"
-    "LocationContainer LocationContainer LocationContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer"
-    "LocationContainer LocationContainer LocationContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer"
-    "LocationContainer LocationContainer LocationContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer"
-    "LocationContainer LocationContainer LocationContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer"; 
-}
+    ". . . SearchBox SearchBox SearchBox SearchBox SearchBox SearchBox . . ."
+    ". . . . . . . . . . . ."
+    ". . LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer . ."
+    ". . LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer . ."
+    ". . LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer LocaitonContainer . ."
+    ". . . . . . . . . . . ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."
+    ". ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ResidentContainer ."; 
+
+  background-color:  #eaecee ;
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+ }
